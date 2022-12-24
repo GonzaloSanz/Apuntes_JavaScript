@@ -28,10 +28,29 @@ console.log(producto4); // Monitor 32"
 console.log(producto.length); // 19
 
 // .indexOf()
-// Ver si contiene una cadena o caracter y devuelve la posición
+// Ver si contiene una cadena o caracter, devolviendo la posición de la primera coincidencia
 console.log(producto.indexOf('Monitor')); // 0
-console.log(producto.indexOf('t')); // 4
+console.log(producto.indexOf('o')); // 1
 console.log(producto.indexOf('Agua')); // -1 (No existe en la cadena)
+
+// .lastIndexOf()
+// Ver si contiene una cadena o caracter, devolviendo la posición de la última coincidencia
+console.log(producto.indexOf('o')); // 5
+
+// .startsWith()
+// Comprueba que un string comience con la palabra indicada.
+// Tienes dos parámetros: la palabra a buscar y la posición donde empezará a buscar (el segundo es opcional)
+const texto = 'Usuario guardado en la base de datos';
+
+console.log(texto.startsWith("Usuario", 0)); // true
+console.log(texto.startsWith("Hola")); // false
+
+
+// .endsWith()
+// Comprueba que un string termine con la palabra indicada.
+console.log(texto.endsWith("datos")); // true
+console.log(texto.endsWith("adios")); // false
+
 
 // .includes()
 // Alternativa a .indexOf(), devuelve un booleano
