@@ -1,14 +1,22 @@
 
 /*
-    1. ¿QUÉ ES UN CONDICIONAL?
-
+ ***********************************************************
+ *                                                         *
+ *                ¿Qué es un condicional?                  *
+ *                                                         *
+ ***********************************************************
+ 
     - Es una estructura de control que nos permite evaluar una condición.
     - Dependiendo del resultado, podrá ejecutar una cosa u otra.
 */
 
 /*
-    2. OPERADORES DE COMPARACIÓN
-
+ ***********************************************************
+ *                                                         *
+ *                Operadores de comparación                *
+ *                                                         *
+ ***********************************************************
+ 
     >       Mayor que
     <       Menor que
     >=      Mayor o igual que
@@ -25,7 +33,11 @@
 const edad = 18;
 
 /*
-    3. IF...ELSE IF...ELSE
+ ***********************************************************
+ *                                                         *
+ *                   Condicional if()                      *
+ *                                                         *
+ ***********************************************************
 */
 
 if (edad < 18) {
@@ -39,9 +51,13 @@ if (edad < 18) {
 }
 
 /*
-    4. OPERADOR TERNARIO
-
-    - Se trata de un if() mucho más rápido.
+ ***********************************************************
+ *                                                         *
+ *                    Operador ternario                    *
+ *                                                         *
+ ***********************************************************
+ 
+    - Se trata de un condicional if() mucho más rápido.
     - La interrogación (?) representa el valor true y los dos puntos (:) false.
 */
 
@@ -51,7 +67,11 @@ console.log(numero > 5 ? 'El número es mayor que 5' : 'El número es menor o ig
 
 
 /*
-    5. OPERADOR TERNARIO ANIDADO
+ ***********************************************************
+ *                                                         *
+ *               Operador ternario anidado                 *
+ *                                                         *
+ ***********************************************************
 */
 
 const autenticado = false;
@@ -61,7 +81,11 @@ console.log(autenticado ? puedoPagar ? 'Está autenticado y puede pagar' : 'Est�
 
 
 /*
-    6. SWITCH
+ ***********************************************************
+ *                                                         *
+ *                   Condicional Switch                    *
+ *                                                         *
+ ***********************************************************
 */
 
 const metodoPago = 'Tarjeta';

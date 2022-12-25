@@ -1,17 +1,27 @@
 'use strict'
 
 /*
-    ¿QUÉ ES UNA VARIABLE?
+ ***********************************************************
+ *                                                         *
+ *                 ¿Qué es una variable?                   *
+ *                                                         *
+ ***********************************************************
 
     - Una variable es un contenedor de información.
     - No pueden existir dos o más variables con el mismo nombre. 
     - Se pueden inicializar sin valor y asignarlo después.
     - Tres métodos para poder crearlas: var, let y const.
+*/
 
-    ¿QUÉ ES EL SCOPE DE UNA VARIABLE?
+/*
+ ***********************************************************
+ *                                                         *
+ *           ¿Qué es el scope de una variable?             *
+ *                                                         *
+ ***********************************************************
 
     - Hace referencia al lugar donde va a vivir ésta, o donde podrá ser accesible.
-    - En JavaScript tenemos varias opciones: global, local y bloque.
+    - En JavaScript existen varias opciones: global, local y bloque.
 */
 
 /*

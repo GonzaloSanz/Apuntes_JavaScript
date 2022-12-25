@@ -1,10 +1,14 @@
 'use strict'
 
 /*
-    1. ¿QUÉ ES UN BOOLEANO?
-
+ ***********************************************************
+ *                                                         *
+ *                  ¿Qué es un booleano?                   *
+ *                                                         *
+ ***********************************************************
+ 
     - Es un dato lógico que solo puede tener los valores false(0) o true(1).
-*/ 
+*/
 
 // Formas de inicializar booleanos
 const boolean1 = true;
@@ -21,7 +25,7 @@ console.log(boolean1 === boolean3); // false
 // Evaluar booleanos
 const autenticado = false;
 
-if(autenticado){ // No es buena práctica hacer if(autenticado === true)
+if(autenticado){ // No es buena práctica hacer if (autenticado === true)
     console.log('Estás autenticado.');
 }
 

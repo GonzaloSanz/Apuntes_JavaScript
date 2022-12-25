@@ -1,10 +1,14 @@
 'use strict'
 
 /*
-    1. OPERADOR TYPEOF
-
+ ***********************************************************
+ *                                                         *
+ *                    Operador typeof                      *
+ *                                                         *
+ ***********************************************************
+ 
     - Permite saber el tipo de dato de una variable.
-*/ 
+*/
 
 const numero = 15;
 console.log(typeof numero); // number
