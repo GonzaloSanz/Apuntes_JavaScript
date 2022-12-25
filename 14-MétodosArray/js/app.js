@@ -78,7 +78,8 @@ console.log(resultado3);
 /* 
     .find()
 
-    - Crea un nuevo array basado en una condición. Sólo devuelve la primera coincidencia.
+    - Crea un nuevo array basado en una condición.
+    - Sólo devuelve la primera coincidencia.
 */
 
 // Mostrar el primer producto que cueste menos o igual que 300€

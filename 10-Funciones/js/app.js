@@ -268,7 +268,7 @@ carrito.forEach(producto => console.log(`${producto.nombre} - Precio: ${producto
 /*
  ***********************************************************
  *                                                         *
- *                  Reproductor de música                  *
+ *             Ejemplo: Reproductor de música              *
  *                                                         *
  ***********************************************************
 */
