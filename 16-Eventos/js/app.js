@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 */
 
 window.addEventListener('load', () =>{
-    console.log('Documento listo y recursos listos');
+    console.log('Documento y recursos listos');
 });
 
 /*
