@@ -83,7 +83,7 @@ console.log(autenticado ? puedoPagar ? 'Est√° autenticado y puede pagar' : 'Est√
 /*
  ***********************************************************
  *                                                         *
- *                   Condicional Switch                    *
+ *                  Condicional switch()                   *
  *                                                         *
  ***********************************************************
 */

@@ -1,7 +1,11 @@
 'use strict'
 
 /*
-	1. REST
+ ***********************************************************
+ *                                                         *
+ *                  	Operador rest                      *
+ *                                                         *
+ ***********************************************************
 
 	- Nos permite representar un numero indefinido de argumentos como un array.
 	- El ultimo parametro se puede prefijar con ... lo que hará que todos los argumentos restantes se coloquen dentro de un array. 
@@ -19,8 +23,12 @@ function nombres(nombreProfe, nombreDelegado, ...restoDeNombres) {
 nombres("Pedro", "Juan", "Manolo", " Sergio", " Javi", " Saul", " Alejandro", " Javier");
 
 /*
-	2. SPREAD
-	
+ ***********************************************************
+ *                                                         *
+ *                    Operador spread                      *
+ *                                                         *
+ ***********************************************************
+
 	- Cuando una funcion espera varios parámetros, si le pasamos un array prefijado con ... intrepreta lo que contiene como los parámetros esperados.
 */
 

@@ -1,7 +1,11 @@
 'use strict'
 
 /*
-    1. ¿QUÉ ES UN ARRAY?
+ ***********************************************************
+ *                                                         *
+ *                    ¿Qué es un array?                    *
+ *                                                         *
+ ***********************************************************
 
     - Es un tipo de dato estructurado que almacena un conjunto de datos homogéneo. 
 */
@@ -18,14 +22,24 @@ const deTodo = ["Hola", 10, true, null, {nombre: 'Juan', trabajo:'Programador'},
 
     - Muestra todo el array en una tabla, por consola.
 */
+
 console.table(hobbies);
 
-// Ver la longitud del array
+/*
+    .length
+    
+    - Ver la longitud del array.
+*/
+
 console.log(hobbies.length);
 
-/* 
-    2. ACCEDER A LOS VALORES DEL ARRAY
-    
+/*
+ ***********************************************************
+ *                                                         *
+ *             Acceder a los valores del array             *
+ *                                                         *
+ ***********************************************************
+
     - Los arrays siempre empiezan con el índice 0 (corresponde al primer valor del array).
 */
 
@@ -40,11 +54,14 @@ console.log(numeros[2]);
 // Acceder al segundo número del array dentro de numeros
 console.log(numeros[6][1]); // 2
 
-
 /*
-    3. RECORRER EL ARRAY
+ ***********************************************************
+ *                                                         *
+ *                    Recorrer el array                    *
+ *                                                         *
+ ***********************************************************
 
-    - Se usará un bucle for o foreach.
+    - Se usará un bucle for() o forEach().
 */
 
 const losMeses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
@@ -54,7 +71,11 @@ for(let i = 0; i < losMeses.length; i++){
 }
 
 /*
-    4. AGREGAR O MODIFICAR VALORES DEL ARRAY
+ ***********************************************************
+ *                                                         *
+ *           Agregar y modificar valores del array         *
+ *                                                         *
+ ***********************************************************
 */
 
 // Agregar el mes de Julio
@@ -69,7 +90,11 @@ losMeses[12] = 'Diciembre'; // JavaScript dejará los índices anteriores vacios
 console.table(losMeses);
 
 /*
-    4. AGREGAR ELEMENTOS AL PRINCIPIO O FINAL DEL ARRAY
+ ***********************************************************
+ *                                                         *
+ *     Agregar elementos al principio o final del array    *
+ *                                                         *
+ ***********************************************************
 */
 
 const carrito = [];
@@ -88,20 +113,30 @@ const producto3 = {
     precio: 2300
 }
 
-// .push()
-// Agregar al final del array
+/*
+    .push()
+
+    - Agregar al final del array.
+*/
+
 carrito.push(producto);
 carrito.push(producto2);
 
-// .unshift()
-// Agregar al inicio del array
-carrito.unshift(producto3);
+/*
+    .unshift()
 
+    - Agregar al inicio del array.
+*/
+
+carrito.unshift(producto3);
 console.table(carrito);
 
-
 /*
-    5. USO DEL OPERADOR SPREAD PARA AGREGAR ELEMENTOS AL ARRAY
+ ***********************************************************
+ *                                                         *
+ *    Agregar elementos al array con el operador spread    *
+ *                                                         *
+ ***********************************************************
 */
 
 let resultado;
@@ -111,40 +146,68 @@ resultado = [producto3, ...resultado, producto2]
 console.table(resultado);
 
 /*
-    6. ELIMINAR ELEMENTOS DEL ARRAY
+ ***********************************************************
+ *                                                         *
+ *              Eliminar elementos del array               *
+ *                                                         *
+ ***********************************************************
 */
 
-// .pop()
-// Eliminar el último elemento 
+/*
+    .pop()
+
+    - Eliminar el último elemento.
+*/
+
 resultado.pop();
 console.table(resultado);
 
-// .shift()
-// Eliminar el primer elemento
+/*
+    .shift()
+    
+    - Eliminar el primer elemento.
+*/
+
 resultado.shift();
 console.table(resultado);
 
-// .splice()
-// Eliminar uno o varios elementos concretos
+/*
+    .splice()
+
+    - Eliminar uno o varios elementos concretos.
+*/
+
 resultado.splice(1, 3); // A partir del índice 1 (incluído), borra tres elementos.
 resultado.splice(0); // Borra el primer elemento
 
 console.table(resultado);
 
 /*
-    7. CONVERTIR ELEMENTOS DE UN ARRAY EN STRING
+ ***********************************************************
+ *                                                         *
+ *        Convertir elementos de un array en strings       *
+ *                                                         *
+ ***********************************************************
 */
 
-// .join()
-// Une los elementos de una array en un string. Se puede pasar el separador dentro del paréntesis.
+/*
+    .join()
+
+    - Une los elementos de una array en un string. 
+    - Se puede pasar el separador dentro del paréntesis.
+*/
+
 const elementos = ['Fuego', 'Aire', 'Agua', 'Tierra'];
 
-console.log(elements.join()); // Fuego,Aire,Agua,Tierra"
+console.log(elements.join()); // Fuego,Aire,Agua,Tierra
 console.log(elements.join(' ')); // Fuego Aire Agua Tierra
 
-
 /*
-    8. DESESTRUCTURACIÓN DE ARRAYS
+ ***********************************************************
+ *                                                         *
+ *                Desestructuración de arrays              *
+ *                                                         *
+ ***********************************************************
 
     - A diferencia de los objetos, puedes darle el nombre que quieras a la nueva variable, porque su valor está definido por la posición.
 */
@@ -166,36 +229,3 @@ console.log(treinta); // 30
 // Sacar múltiples valores en un array (usar spread)
 const [, ...elResto] = numeros2;
 console.log(elResto); // 20, 30, 40, 50
-
-
-/*
-    8. ITERAR UN ARRAY CON FOREACH
-
-    - Una función mucho mejor y más simple que el bucle for.
-*/
-
-const carrito2 = [
-    {nombre: 'Monitor Aorus 27 pulgadas', precio: 500},
-    {nombre: 'Televisión LG 4K', precio: 100},
-    {nombre: 'Tablet Samsung', precio: 200},
-    {nombre: 'Auriculares Sony', precio: 300},
-    {nombre: 'Teclado Razer', precio: 400},
-    {nombre: 'Alcatel', precio: 700}
-]
-
-carrito2.forEach(function(producto){
-    console.log(`${producto.nombre} - Precio: ${producto.precio}`);
-});
-
-/*
-    8. ITERAR UN ARRAY CON MAP
-
-    - Casi igual que el forEach, pero devuelve un array.
-*/
-
-// Recoger todos los productos que cuesten menos de 300€.
-const nuevoArray = carrito2.map( function(producto){
-    return `${producto.nombre} - Precio: ${producto.precio}`;
-})
-
-console.log(nuevoArray);

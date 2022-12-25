@@ -1,7 +1,11 @@
 'use strict'
 
-/* 
-    1. ¿QUÉ ES UNA FUNCIÓN?
+/*
+ ***********************************************************
+ *                                                         *
+ *                  ¿Qué es una función?                   *
+ *                                                         *
+ ***********************************************************
 
     - Es una agrupación de código reutilizable y más fácil de mantener.
     - JavaScript se ejecuta con dos pasadas al código (hosting), de forma que una función puede llamarse antes de ser declarada.
@@ -22,25 +26,47 @@ sumar();
 sumar2();
 
 /*
-    2. FUNCIONES DE VENTANA
+ ***********************************************************
+ *                                                         *
+ *                  Funciones de ventana                   *
+ *                                                         *
+ ***********************************************************
 
     - Propias de JavaScript.
 */
 
-// Pop Up de alerta
+/*
+    alert();
+
+    - Pop up de alerta.
+*/
+
 alert("Esto es un mensaje");
 
-// Ventana de confirmación
-// Devuelve un booleano
+/*
+    comfirm();
+
+    - Ventana de confirmación.
+    - Devuelve un booleano.
+*/
+
 confirm("¿Deseas continuar?");
 
-// Ventana para introducir datos
-// Tiene un segundo parámetro opcional, que sería el valor por defecto en caso de no introducir nada.
+/*
+    prompt();
+
+    - Ventana para introducir datos.
+    - Tiene un segundo parámetro opcional, que sería el valor por defecto en caso de no introducir nada. 
+*/
+
 prompt("Introduce tu edad", 18);
 
-
 /*
-    3. PARÁMETROS Y ARGUMENTOS EN FUNCIONES
+ ***********************************************************
+ *                                                         *
+ *                 Parámetros y argumentos                 *
+ *                                                         *
+ ***********************************************************
 */
 
 function sumarNumeros(a, b) { // a y b son parámetros
@@ -49,9 +75,12 @@ function sumarNumeros(a, b) { // a y b son parámetros
 
 sumarNumeros(12, 56); // 12 y 56 son argumentos
 
-
 /*
-    4. PARÁMETROS POR DEFECTO
+ ***********************************************************
+ *                                                         *
+ *                  Parámetros por defecto                 *
+ *                                                         *
+ ***********************************************************
 */
 
 function saludar(nombre, apellido = '') { // apellido por defecto saldrá vacío, a menos que se pase como parámetro.
@@ -61,9 +90,12 @@ function saludar(nombre, apellido = '') { // apellido por defecto saldrá vacío
 saludar('Gonzalo', 'Sanz');
 saludar('Gonzalo');
 
-
 /*
-    5. COMUNICACIÓN ENTRE FUNCIONES
+ ***********************************************************
+ *                                                         *
+ *              Comunicación entre funciones               *
+ *                                                         *
+ ***********************************************************
 */
 
 iniciarApp();
@@ -83,9 +115,12 @@ function usuarioAutenticado(usuario) {
     console.log(`Usuario ${usuario} autenticado correctamente.`);
 }
 
-
 /*
-    6. DEVOLVER VARIABLES
+ ***********************************************************
+ *                                                         *
+ *                   Devolver variables                    *
+ *                                                         *
+ ***********************************************************
 
     - Con la palabra reservada return, se puede devolver algo en una función.
 */
@@ -109,10 +144,15 @@ const totalPagar = calcularImpuesto(total);
 console.log(`El total a pagar es de: ${totalPagar}`);
 
 /*
-    7. DETENER LA EJECUCIÓN DE UNA FUNCIÓN
+ ***********************************************************
+ *                                                         *
+ *           Detener la ejecución de la función            *
+ *                                                         *
+ ***********************************************************
 
-    - Con return, se puede interrumpir la función y las siguientes líneas de código no se ejecutarán.
+    - Con return se puede interrumpir la función, y las siguientes líneas de código no se ejecutarán.
 */
+
 const puntuacion = 450;
 
 function revisarPuntuacion() {
@@ -129,9 +169,12 @@ function revisarPuntuacion() {
 
 revisarPuntuacion();
 
-
 /*
-    8. FUNCIONES EN OBJETOS (MÉTODOS DE PROPIEDAD)
+ ***********************************************************
+ *                                                         *
+ *       Funciones en objetos (Métodos de propiedad)       *
+ *                                                         *
+ ***********************************************************
 */
 
 const reproductor = {
@@ -163,9 +206,12 @@ reproductor.borrar(30);
 reproductor.crearPlaylist('Los 40 Principales');
 reproductor.reproducirPlaylist('Heavy Metal');
 
-
 /*
-    9. FUNCIONES FLECHA (ANÓNIMAS)
+ ***********************************************************
+ *                                                         *
+ *               Funciones flecha (anónimas)               *
+ *                                                         *
+ ***********************************************************
 
     - Es una alternativa compacta a la expresión tradicional.
     - No dispone de sus propios enlaces a this o super, por que no debe utilizarse para métodos.
@@ -195,9 +241,12 @@ const aprendiendo3 = () => {
 const aprendiendo3Param = (tecnologia1, tecnologia2) => `Aprendiendo ${tecnologia1} y ${tecnologia2}`;
 console.log(aprendiendo3Param('JavaScript', 'PHP'));
 
-
-/* 
-    10. FUNCIONES FLECHA CON MAP Y FOREACH
+/*
+ ***********************************************************
+ *                                                         *
+ *         Funciones flecha con map() y foreach()          *
+ *                                                         *
+ ***********************************************************
 */
 
 const carrito = [
@@ -209,17 +258,21 @@ const carrito = [
     { nombre: 'Alcatel', precio: 700 }
 ]
 
-// map
+// map()
 const nuevoArray = carrito.map(producto => `${producto.nombre} - Precio: ${producto.precio}`);
 console.log(nuevoArray);
 
-// forEach
+// forEach()
 carrito.forEach(producto => console.log(`${producto.nombre} - Precio: ${producto.precio}`));
 
-
 /*
-    11. EJEMPLO REPRODUCTOR DE MÚSICA
+ ***********************************************************
+ *                                                         *
+ *                  Reproductor de música                  *
+ *                                                         *
+ ***********************************************************
 */
+
 const reproductor = {
     cancion: '',
     reproducir: id => console.log(`Reproduciendo canción con el id ${id}`),
@@ -250,17 +303,28 @@ reproductor.crearPlaylist('Los 40 Principales');
 reproductor.reproducirPlaylist('Heavy Metal');
 
 /*
-    12. FUNCIONES DE INTERVALOS
+ ***********************************************************
+ *                                                         *
+ *                 Funciones de intervalos                 *
+ *                                                         *
+ ***********************************************************
 */
 
-// 1. setTimeout()
-// Sólo se ejecuta una vez, en un tiempo especificado
+/* 
+    setTimeout()
+
+    - Sólo se ejecuta una vez, en un tiempo especificado-
+*/
+
 setTimeout(() => {
     console.log('Esta función se ejecuta después de 3 segundos');
 }, 3000); // Pasados los 3 segundos.
 
-// 2. setInterval()
-// Establece un intervalo que se ejecuta cada x tiempo.
+/* 
+    setInterval()
+    - Establece un intervalo que se ejecuta cada x tiempo.
+*/
+
 setInterval(() => {
     console.log('Intervalo ejecutado');
 }, 2000); // Cada 2 segundos

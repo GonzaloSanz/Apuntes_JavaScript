@@ -1,7 +1,11 @@
 'use strict'
 
 /*
-    1. ¿QUÉ ES UN BUCLE?
+ ***********************************************************
+ *                                                         *
+ *                    ¿Qué es un bucle?                    *
+ *                                                         *
+ ***********************************************************
 
     - Es una estructura de control.
     - Permite que el código se ejecute hasta que una condición se cumpla o deje de cumplirse.
@@ -17,7 +21,11 @@ const carrito = [
 ];
 
 /*
-    2.  BUCLE FOR()
+ ***********************************************************
+ *                                                         *
+ *                          for()                          *
+ *                                                         *
+ ***********************************************************
 
     - Permite definir el número máximo de iteraciones.
 */
@@ -27,13 +35,17 @@ for (let i = 0; i < carrito.length; i++) {
 }
 
 /*
-    3. BREAK Y CONTINUE
+ ***********************************************************
+ *                                                         *
+ *                     break y continue                    *
+ *                                                         *
+ ***********************************************************
 
-    - Break corta la ejecución de un bucle.
-    - Continue permite interceptar un elemento y continuar la ejecución del bucle.
+    - break corta la ejecución de un bucle.
+    - continue permite interceptar un elemento y continuar la ejecución del bucle.
 */
 
-// Cuando toque el 5, finalizar el bucle con break;
+// Cuando toque el 5, finalizar el bucle
 for (let i = 0; i < 10; i++) {
     if (i == 5) {
         console.log('Estamos en el 5');
@@ -53,13 +65,17 @@ for (let i = 0; i < 10; i++) {
     console.log(`Número: ${i}`);
 }
 
-/* 
-    4. EJERCICIO FIZZ BUZZ
- 
-    - Recorrer los 100 primeros números y cuando sea el:
-        + 3 6 9 12... Mostrar fizz
-        + 5 10 15 20... Mostrar buzz
-        + 15 30 45... Mostrar FIZZ BUZZ!
+/*
+ ***********************************************************
+ *                                                         *
+ *                   Ejercicio Fizz Buzz                   *
+ *                                                         *
+ ***********************************************************
+
+    Recorrer los 100 primeros números y cuando sea el:
+        - 3 6 9 12... Mostrar fizz
+        - 5 10 15 20... Mostrar buzz
+        - 15 30 45... Mostrar FIZZ BUZZ!
 */
 
 for (let i = 0; i <= 100; i++) {
@@ -73,7 +89,11 @@ for (let i = 0; i <= 100; i++) {
 }
 
 /*
-    5. BUCLE WHILE
+ ***********************************************************
+ *                                                         *
+ *                          while()                        *
+ *                                                         *
+ ***********************************************************
 
     - Ejecuta el bloque de código mientras se cumpla la condición.
 */
@@ -86,11 +106,14 @@ while (i > 10) {
     i--; // Decremento
 }
 
-
 /*
-    6. BUCLE DO WHILE
+ ***********************************************************
+ *                                                         *
+ *                       do while()                        *
+ *                                                         *
+ ***********************************************************
 
-    - A diferencia del while, al menos se ejecuta la primera vez, porque evalúa la condición al final.
+    - A diferencia de while(), al menos se ejecuta la primera vez, porque evalúa la condición al final.
 */
 
 let j = 1;
@@ -101,28 +124,41 @@ do {
 
 } while (j < 10);
 
-
 /*
-    7. BUCLES FOREACH Y MAP
-
-    - La diferencia es que map devuelve un nuevo array y forEach no.
+ ***********************************************************
+ *                                                         *
+ *                    forEach() y map()                    *
+ *                                                         *
+ ***********************************************************
 */
 
 const tareas = ['Comer', 'Proyecto', 'Dibujo', 'Estudiar', 'Entrenar'];
 
-// forEach
-// El segundo parámetro siempre es el índice (no es obligatorio)
+/*
+    forEach()
+
+    -El segundo parámetro siempre es el índice (no es obligatorio).
+*/
+
 tareas.forEach((pendiente, indice) => {
     console.log(`${indice}: ${pendiente}`);
 })
 
-// map
+/*
+    map()
+
+    - Devuelve un nuevo array.
+*/
+
 const lasTareas = tareas.map((tarea) => tarea);
 console.log(lasTareas);
 
-
 /*
-    7. BUCLE FOR OF
+ ***********************************************************
+ *                                                         *
+ *                        for of()                         *
+ *                                                         *
+ ***********************************************************
 
     - Recorre un array de forma mucho más simplificada.
 */
@@ -132,7 +168,11 @@ for (let tarea of tareas) {
 }
 
 /*
-    7. BUCLE FOR IN
+ ***********************************************************
+ *                                                         *
+ *                        for in()                         *
+ *                                                         *
+ ***********************************************************
 
     - Casi igual que for of, pero itera sobre OBJETOS.
     - Si se usa con un array normal, sólo devolverá sus índices.

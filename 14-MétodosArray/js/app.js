@@ -24,7 +24,7 @@ const existe2 = meses.some(mes => mes === 'Febrero');
 console.log(existe2); // true
 
 
-// Métodos alternativos para arrays normales.
+// Método alternativo para arrays normales.
 meses.forEach(mes => {
     if (mes === 'Enero') {
         console.log('Enero si existe');
