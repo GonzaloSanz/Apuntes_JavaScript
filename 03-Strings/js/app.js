@@ -1,9 +1,9 @@
 'use strict'
 
 /*
-    1. ¿QUÉ ES UN STRING?
+    ¿QUÉ ES UN STRING?
 
-    - Es una secuencia de caracteres usada representar texto.
+    - Es una secuencia de caracteres usada para representar texto.
 */
 
 // Tres formas de crear un String
@@ -20,7 +20,7 @@ const producto4 = "Monitor 32\"";
 console.log(producto4); // Monitor 32"
 
 /*
-    2. MÉTODOS PARA STRINGS
+    MÉTODOS PARA STRINGS
 */
 
 // .length
@@ -38,7 +38,7 @@ console.log(producto.indexOf('Agua')); // -1 (No existe en la cadena)
 console.log(producto.indexOf('o')); // 5
 
 // .startsWith()
-// Comprueba que un string comience con la palabra indicada.
+// Comprueba que un string comience con la palabra indicada
 // Tienes dos parámetros: la palabra a buscar y la posición donde empezará a buscar (el segundo es opcional)
 const texto = 'Usuario guardado en la base de datos';
 
@@ -47,7 +47,7 @@ console.log(texto.startsWith("Hola")); // false
 
 
 // .endsWith()
-// Comprueba que un string termine con la palabra indicada.
+// Comprueba que un string termine con la palabra indicada
 console.log(texto.endsWith("datos")); // true
 console.log(texto.endsWith("adios")); // false
 

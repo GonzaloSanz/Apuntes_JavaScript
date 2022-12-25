@@ -45,7 +45,7 @@ const {nombre} = producto;
 console.log(nombre);
 
 // Múltiple extracción
-const{precio, disponible} = producto;
+const {precio, disponible} = producto;
 console.log(precio);
 console.log(disponible);
 
