@@ -7,7 +7,7 @@
  *                                                         *
  ***********************************************************
  
-    - Evento que se ejecuta cuando el HTML ya está completamente cargado.
+    - Evento que se ejecuta cuando el HTML ya está completamente cargado, pero antes que sus imágenes y otros recursos.
 */
 
 /*
@@ -18,6 +18,20 @@
 
 document.addEventListener('DOMContentLoaded', () =>{
     console.log('Documento listo');
+});
+
+/*
+ ***********************************************************
+ *                                                         *
+ *                          load                           *
+ *                                                         *
+ ***********************************************************
+ 
+    - Evento que se ejecuta cuando el HTML ya está completamente cargado, al igual que sus recursos dependientes.
+*/
+
+window.addEventListener('load', () =>{
+    console.log('Documento listo y recursos listos');
 });
 
 /*
