@@ -70,7 +70,7 @@ localStorage.setItem('meses', JSON.stringify(meses));
 /* 
     .getItem(clave)
 
-    - Recupera datos del Storage.
+    - Recupera datos del Storage, a través de su clave.
     - Si intentas recuperar un valor que no existe, devuelve null.
 */
 
