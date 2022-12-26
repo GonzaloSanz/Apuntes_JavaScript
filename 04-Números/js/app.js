@@ -48,6 +48,16 @@ console.log(isNaN(texto)); // true
 console.log(isNaN(numero)); // false
 
 /*
+    .toFixed(n)
+
+    - Dejar un número decimal en n decimales.
+    - Redondea la cifra.
+*/
+
+const numeroDecimal = 34.768563245;
+console.log(numeroDecimal.toFixed(2)); // 34.77
+
+/*
  ***********************************************************
  *                                                         *
  *              Métodos con el objeto Number               *

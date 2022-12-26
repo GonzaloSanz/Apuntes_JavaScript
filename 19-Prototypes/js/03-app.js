@@ -14,7 +14,7 @@ function Cliente(nombre, saldo) {
 }
 
 // Prototype exclusivo de Cliente
-Cliente.prototype.tipoCliente = function () { // No sirve la sintaxis de función flecha (function busca en el objeto actual y la función flecha en la ventana global)
+Cliente.prototype.tipoCliente = function () { // No sirve la sintaxis de función flecha si se va a usar this (function busca en el objeto actual y la función flecha en la ventana global)
     let tipo;
 
     if (this.saldo > 10000) {
