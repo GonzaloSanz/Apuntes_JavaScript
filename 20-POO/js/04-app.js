@@ -7,7 +7,7 @@
  *                                                         *
  ***********************************************************
 
-    - Los accedentes (getters) permiten acceder a la propiedades del objeto.
+    - Los accedentes (getters) permiten acceder a las propiedades del objeto.
     - Los mutadores (setters) modifican las propiedades del objeto.
 */
 
