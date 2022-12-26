@@ -7,31 +7,32 @@
  *                                                         *
  ***********************************************************
 
-    - Los accedentes (getters) permiten acceder a las propiedades del objeto.
-    - Los mutadores (setters) modifican las propiedades del objeto.
+    - Los getters (accedentes) y setters (mutadores) son métodos de acceso a los atributos de una clase.
+    - Los accedentes recuperan el valor de un atributo.
+    - Los mutadores asignan un valor a un atributo.
 */
 
 class Cliente {
 
-    // Propiedad privada
+    // Atributo privado
     // Sólo accesible desde la clase (métodos)
     #nombre;
 
     // Accedente (Getter)
-    setNombre(nombre){
-        this.#nombre = nombre;
-    }
-
-    // Mutador (Setter)
     getNombre(){
         return this.#nombre;
     }
+
+    // Mutador (Setter)
+    setNombre(nombre){
+        this.#nombre = nombre;
+    }
 }
 
-const gonzalo = new Cliente('Gonzalo', 600);
+const gonzalo = new Cliente();
+
+// Cambiar el nombre
+gonzalo.setNombre('Gonzalo');
 
 // Obtener el nombre actual
 console.log(gonzalo.getNombre());
-
-// Cambiar el nombre
-gonzalo.setNombre('OtroNombre');
