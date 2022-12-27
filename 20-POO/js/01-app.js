@@ -3,6 +3,19 @@
 /*
  ***********************************************************
  *                                                         *
+ *   ¿Qué es la Programación Orientada a Objetos (POO)?    *
+ *                                                         *
+ ***********************************************************
+
+    - Es un paradigma de programación, es decir, un modelo o estilo de programación.
+    - Se basa en el concepto de clases y objetos. 
+    - Este tipo de programación se utiliza para estructurar un programa de software en piezas 
+    simples y reutilizables de planos de código (clases), para crear instancias individuales de objetos. 
+*/
+
+/*
+ ***********************************************************
+ *                                                         *
  *                    ¿Qué es una clase?                   *
  *                                                         *
  ***********************************************************
