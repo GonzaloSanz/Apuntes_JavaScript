@@ -1,15 +1,15 @@
 'use strict'
 
-    /*
-     ***********************************************************
-     *                                                         *
-     *                     ¿Qué es un IFFE?                    *
-     *                                                         *
-     ***********************************************************
-    
-        - Significa 'Expresión de Función Ejecutada Inmediatamente'.
-        - Mantiene funciones y variables de forma local, no existirán en otros archivos de JavaScript.
-    */
+/*
+***********************************************************
+*                                                         *
+*                     ¿Qué es un IFFE?                    *
+*                                                         *
+***********************************************************
+
+    - Significa 'Expresión de Función Ejecutada Inmediatamente'.
+    - Mantiene funciones y variables de forma local, no existirán en otros archivos de JavaScript.
+*/
 
     (function () {
         console.log('Desde un IFFE');
@@ -34,7 +34,7 @@ window.nombreVentana = 'Gonzalo';
 /*
  ***********************************************************
  *                                                         *
- *                Exportar a otros archivos                *
+ *                 Exportar a otros módulos                *
  *                                                         *
  ***********************************************************
 

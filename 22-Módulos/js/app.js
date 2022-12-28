@@ -3,7 +3,18 @@
 /*
  ***********************************************************
  *                                                         *
- *               Importar de otros archivos                *
+ *                   ¿Qué es un módulo?                    *
+ *                                                         *
+ ***********************************************************
+
+    - Un módulo es solo un archivo. Un script es un módulo.
+    - Los módulos pueden cargarse entre sí y usar directivas especiales (export e import) para intercambiar funcionalidad.
+*/
+
+/*
+ ***********************************************************
+ *                                                         *
+ *                 Importar de otros módulos               *
  *                                                         *
  ***********************************************************
 
