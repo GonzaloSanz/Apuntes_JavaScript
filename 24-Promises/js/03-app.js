@@ -32,10 +32,10 @@ const aplicarDescuento = new Promise ( (resolve, reject) => {
 *                                                         *
 ***********************************************************
 
-    - puede tener tres valores posibles:
-        - fullfilled: El promise se complió.
-        - rejected: EL Promise no se cumplió
-        - pending: No se ha cumplido y tampoco fue rechazado.
+    - Puede tener tres valores posibles:
+        + fullfilled: El promise se complió.
+        + rejected: El promise no se cumplió.
+        + pending: No se ha cumplido y tampoco fue rechazado.
 */
 
 console.log(aplicarDescuento); // Promise {<rejected>: 'No se pudo aplicar el descuento'}
