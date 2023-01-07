@@ -117,7 +117,7 @@ console.log(navegacion);
 /*
     .querySelectorAll()
 
-    - Selecciona avrios elementos.
+    - Selecciona varios elementos.
     - La principal diferencia con querySelector() es que devuelve todos los elementos del selector, no sólo uno.
 */
 
