@@ -8,7 +8,7 @@
  ***********************************************************
 
     - Es una agrupación de código reutilizable y más fácil de mantener.
-    - JavaScript se ejecuta con dos pasadas al código (hosting), de forma que una función puede llamarse antes de ser declarada.
+    - JavaScript se ejecuta con dos pasadas al código (hoisting), de forma que una función puede llamarse antes de ser declarada.
 */
 
 // Declaración de función
