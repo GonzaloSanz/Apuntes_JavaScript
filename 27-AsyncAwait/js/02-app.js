@@ -22,9 +22,10 @@ function descargarClientes() {
 *                                                         *
 ***********************************************************
 
-    - Síncrona: Cada instrucción se ejecutará en secuencia hasta terminar.
-    - Asíncrona: Difiere la ejecución de la función, a la espera de que se complete una operación.  
+    - Síncrona: Difiere la ejecución de la función, a la espera de que se complete una operación.  
         + Permite tener una mejor respuesta en las aplicaciones y reduce el tiempo de espera del cliente.
+        
+    - Asíncrona: Cada instrucción se ejecutará en secuencia hasta terminar.
 */
 
 /*
